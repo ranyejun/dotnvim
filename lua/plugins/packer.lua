@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "ahmedkhalf/project.nvim"
+  use "nvim-lua/plenary.nvim"
   -- use "nvim-lua/popup.nvim" 
   -- use "moll/vim-bbye"
   -- use "lewis6991/impatient.nvim"
