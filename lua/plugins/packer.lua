@@ -106,6 +106,9 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
+  -- quick fix
+  use {'kevinhwang91/nvim-bqf'}
+
   -- Git
   use "lewis6991/gitsigns.nvim"
 

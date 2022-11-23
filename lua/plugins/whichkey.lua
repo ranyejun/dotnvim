@@ -85,8 +85,8 @@ local mappings = {
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["k"] = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Show Info" },
   ["n"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["q"] = { "<cmd>q<cr>", "Quit"},
-  ["Q"] = { "<cmd>q!<cr>", "Force Quit"},
+  ["q"] = { "<cmd>q<cr>", "Quit" },
+  ["Q"] = { "<cmd>q!<cr>", "Force Quit" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   [" "] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
