@@ -75,6 +75,9 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp-signature-help"
 
+  -- rust plugins
+  use 'simrat39/rust-tools.nvim'
+
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "saadparwaiz1/cmp_luasnip"
@@ -101,7 +104,7 @@ return packer.startup(function(use)
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
-    branch = "v0.8.0",
+    branch = "v0.8.5.2",
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
