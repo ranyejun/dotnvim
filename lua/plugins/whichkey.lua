@@ -83,7 +83,7 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-  ["k"] = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Show Info" },
+  ["k"] = { "<cmd>lua vim.lsp.buf.hover()<CR>", "buffer hover" },
   ["n"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["q"] = { "<cmd>q<cr>", "Quit" },
   ["Q"] = { "<cmd>q!<cr>", "Force Quit" },
@@ -91,6 +91,10 @@ local mappings = {
   [" "] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
+  },
+
+  d = {
+
   },
 
   p = {
@@ -139,6 +143,7 @@ local mappings = {
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" },
   },
+
   t = {
     name = "Telescope",
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
