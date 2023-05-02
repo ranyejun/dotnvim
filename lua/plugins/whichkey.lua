@@ -76,6 +76,7 @@ local opts = {
 
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  ["b"] = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "breakpoint" },
   ["c"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["f"] = {
@@ -94,7 +95,10 @@ local mappings = {
   },
 
   d = {
-
+    name = "Debug",
+    v = { "<cmd>lua require('dap.ui.widgets').hover()<cr>", "hover" },
+    p = { "<cmd>lua require('dap.ui.widgets').preview()<cr>", "preview" },
+    e = { "<cmd>lua require('dapui').eval()<cr>", "eval" },
   },
 
   p = {

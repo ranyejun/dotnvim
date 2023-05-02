@@ -61,6 +61,12 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 -- keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
+-- Debug
+keymap("n", "<F7>", "<cmd>lua require('dap').step_into()<cr>", opts)
+keymap("n", "<F8>", "<cmd>lua require('dap').step_over()<cr>", opts)
+keymap("n", "<S-F9>", "<cmd>lua require('dap').step_out()<cr>", opts)
+keymap("n", "<F9>", "<cmd>lua require('dap').continue()<cr>", opts)
+
 
 -- Terminal --
 -- Better terminal navigation
